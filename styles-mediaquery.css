@@ -1,0 +1,103 @@
+@media screen and (max-width:900px) {
+    body{
+        width:100%
+    }
+    /* Navigation bar */
+    nav{
+        width: 100%;
+        padding: 1em;
+    }
+        .logo{
+            width: 100px;
+        }
+        .try-btn{
+            padding:auto ;
+            max-width: fit-content;
+        }
+    /* End of the NavBar */
+
+    /* Container */
+    .container{
+        width: 100%;
+    }
+        /* Header Section */
+            .header{
+                margin: auto;
+                text-align: center;
+                width: 60%;
+            }
+                .header p{
+                    max-width: 85%;
+                }
+        /* End of the Header Section */
+
+        /* Mockup Section */
+        .mockups{
+            width: 80%;
+        }
+            .mockups img{
+                width: 100%;
+            }
+        /* End of Mockup Section */
+
+        /* Statistics section */
+        .stats{
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+        }
+        /* End of the statistics section */
+
+        /* Features section */
+        .illustration{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+            .box{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                max-width: 80%;
+            }
+                .box div{
+                    width: 100%;
+                    text-align: center;
+                }
+        /* End of features Sections */
+
+        /* Commuities section */
+        .community{
+            width: 100%;
+        }
+        /* End of the communities section */
+
+        /* Ending Section */
+        .ending{
+            flex-direction: column-reverse;
+        }
+            .contact{
+                width: 100%;
+            }
+                .contact-details{
+                    width: 100%;
+                }
+                    .contact-details p{
+                        width: 100%;
+                    }
+            .newsletter{
+                width: 100%;
+            }   
+                .newsletter p{
+                    max-width: 100%;
+                }
+                .newsletter div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: 100%;
+                    max-width: 100%;
+                }
+        /* End of the Ending section */
+    /* End of the container */
+}

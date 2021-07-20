@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+    padding: 1em 3em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: hsl(207, 100%, 98%);
+    transition: 1s ease-in-out;
+}
+    nav:hover{
+        transition: 1s ease-in-out;
+        background-color: white;
+        box-shadow: 0 0 10px hsl(192, 100%, 9%);
+    }
+    .logo{
+        max-width: 200px;
+    }
+        .logo img{
+            width: 100%;
+        }
+    .try-btn{
+        max-width: 200px;
+    }
+        .try-btn button{
+            background-color: transparent;
+            color: hsl(322, 100%, 66%);
+            text-transform: capitalize;
+            width: 100%;
+            padding: 0.5em 2em;
+            border-radius: 1em;
+            border: 1px solid hsl(322, 100%, 66%);
+            transition: 1s ease-in-out;
+        }
+            .try-btn button:hover{
+                cursor: pointer;
+                color: hsl(321, 100%, 78%);
+                border: 1px solid hsl(321, 100%, 78%);
+                box-shadow: 0 0 10px hsl(322, 100%, 66%);
+            }
+/* End of the navigation bar */
+
+/* Container Section("main tag") */
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(207, 100%, 98%);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 3em;
+    padding: 5em 0 0 0;
+}
+    /* Header Section */
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+        .header h1{
+            font-weight: 700;
+            color: hsl(192, 100%, 9%);
+        }
+        .header p{
+            font-weight: 400;
+            max-width: 400px;
+            color: hsla(192, 100%, 9%, 0.699);
+        }
+        .started-btn{
+            margin-top: 1em;
+            color: white;
+            background-color: hsl(322, 100%, 66%);
+            border: none;
+            border-radius: 2em;
+            font-weight: 700;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            padding: 0.7em 3em;
+            max-width: 300px;
+            transition: 1s ease-in-out;
+        }
+            .started-btn:hover{
+                cursor: pointer;
+                background-color: hsl(321, 100%, 78%);
+                box-shadow: 0 0 10px hsl(322, 100%, 66%);
+            }
+    /* End of the Header Section */
+
+    /* Mockup Section */
+    .mockups{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+        padding: 3em 0;
+        z-index: 2;
+    }
+        .mockups img{
+            height: 100%;
+            width: 100%;
+        }
+    /* End of the Mockup Section */
+
+    /* Statistics Section */
+    .stats{
+        color: hsl(192, 100%, 9%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding: 3em;
+    }   
+        .stats div{
+            display: flex;
+            flex-direction: column;
+        }
+            .stats-icon{
+                width: 35px;
+            }
+                .stats-icon img{
+                    width: 100%;
+                    height: 100%;
+                }
+            .stats h1{
+                font-size: 4rem;
+            }
+            .stats p{
+                color: hsl(209, 36%, 27%);
+                 display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    /* End of the Statistics Section */
+
+    /* Features Illustration Section */
+    .illustrations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 5em;
+    }
+        .conversation{
+            display:flex;
+            flex-direction: row-reverse;
+        }
+        .box{
+            display: flex;
+            padding: 3em;
+            gap: 2em;
+            width: 80%;
+        }
+        
+            .box div{
+                width: 50%;
+            }
+                .box div:first-child{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 1em;
+                    color: hsl(192, 100%, 9%);
+                }
+                .box div img{
+                    width: 100%;
+                }
+    /* End of the Features Illustration Section */
+
+    /* Build Your commnity Section */
+    .community{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        color: hsl(192, 100%, 9%);
+        padding: 5em;
+        gap: 2em;
+    }
+    /* End of the Communnity Section */
+
+    /* Ending Section */
+    .ending{
+        display: flex;
+        gap: 2em;
+        padding: 2em;
+        width: 100%;
+        background-color: hsl(192, 100%, 9%);
+    }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 50%;
+            color: hsl(207, 100%, 98%);
+        }
+            .logo-end{
+                max-width: 200px;
+            }
+                .logo-end img{
+                    width: 100%;
+                }
+            .contact-details{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                gap: 1em;
+            }
+            table{
+                display:table;
+            }
+            .socials{
+                display: flex;
+                justify-content: space-evenly;
+                list-style: none;
+                max-width: 200px;
+                margin-top: 2em;
+            }
+                .socials li{
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                }
+                    .socials li a{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px;
+                        text-decoration: none;
+                        color: hsl(207, 100%, 98%);
+                        border: 1px solid hsl(207, 100%, 98%);
+                        border-radius: 50%;
+                        transition: 1s ease-in-out;
+                    }
+                        .socials li a:hover{
+                            border: 1px solid hsl(322, 100%, 66%);
+                            color: hsl(322, 100%, 66%);
+                            transition: 1s ease-in-out;
+                        }
+        .newsletter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1em;
+            width: 50%;
+            color: hsl(207, 100%, 98%);
+        }
+            .newsletter h3{
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .newsletter p{
+                max-width: 55%;
+                opacity: 0.9;
+            }
+            .newsletter div{
+                display: flex;
+                gap: 2em;
+                margin-top: 1em;
+                width: 80%;
+            }
+                .newsletter div input{
+                    width: 50%;
+                    padding: 0.7em 1em;
+                    border-radius: 5px;
+                    border: none;
+                    color: hsl(322, 100%, 66%);
+                    outline: none;
+                    transition: 1s ease-in-out;
+                }
+                    .newsletter div input:focus{
+                        transition: 1s ease-in-out;
+                        border: 1px solid rgb(0, 184, 0);
+                        box-shadow: 0 0 10px -2px hsl(150, 100%, 66%);
+                    }
+                .subscribe-btn{
+                    width: fit-content;
+                    padding: 0.7em 3em;
+                    border-radius: 5px;
+                    font-weight: 700;
+                    border: none;
+                    background-color: hsl(322, 100%, 66%);                    
+                    color: white;
+                    text-transform: capitalize;
+                    transition: 1s ease-in-out;
+                }
+                    .subscribe-btn:hover{
+                        cursor: pointer;
+                        background-color: hsl(321, 100%, 78%);
+                        box-shadow: 0 0 10px hsl(322, 100%, 66%);
+                    }
+    /* End of the Ending Section */
+
+    /* Footer Section */
+    footer{
+        background-color: hsl(192, 100%, 9%);
+        padding: 1em 0;
+    }
+        .attribution {
+            color: hsl(192, 100%, 39%);
+            font-size: 11px;
+            text-align: center;
+        }
+        .attribution a {
+            color: hsl(207, 100%, 98%);
+        }
+    /* End of the Footer Section */
+/* End of Container Section */
