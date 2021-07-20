@@ -19,6 +19,7 @@
     /* Container */
     .container{
         width: 100%;
+        background-color: white;
     }
         /* Header Section */
             .header{
@@ -44,7 +45,13 @@
         .stats{
             display: flex;
             flex-direction: column;
+            width: 100%;
             gap: 5em;
+            padding-bottom: 10em;
+            background-image:  url("images/bg-section-top-mobile-1.svg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100%;
         }
         /* End of the statistics section */
 
@@ -58,18 +65,40 @@
                 display: flex;
                 flex-direction: column-reverse;
                 align-items: center;
-                max-width: 80%;
+                width: 100%;
             }
                 .box div{
                     width: 100%;
                     text-align: center;
                 }
+            .grow, .users{
+                padding: 2em 3em;
+                background-color: hsl(207, 100%, 98%);}
+            
+            .conversation{
+                padding-top: 10em;
+                padding-bottom: 15em;
+                background-image: url("images/bg-section-bottom-mobile-1.svg"), url("images/bg-section-top-mobile-2.svg");
+                background-repeat: no-repeat;
+                background-position: top, bottom;
+                background-size: 100%;
+            }
         /* End of features Sections */
 
         /* Commuities section */
         .community{
+            padding-top: 9em;
+            padding-bottom: 9em;
             width: 100%;
+            background-image: url("images/bg-section-bottom-mobile-2.svg"), url("images/bg-footer-top-mobile.svg");
+            background-repeat: no-repeat;
+            background-position: top, bottom;
+            background-size: 100%;
         }
+            .community div{
+                text-align: center;
+                padding: 9em 0;
+            }
         /* End of the communities section */
 
         /* Ending Section */
@@ -100,4 +129,16 @@
                 }
         /* End of the Ending section */
     /* End of the container */
+}
+@media screen and (max-width:450px) {
+    .conversation{
+        padding: 8em 3em;
+    }
+    .community{
+            padding-top: 9em;
+            padding-bottom: 9em;
+    }
+        .community div{
+            padding: 0;
+        }
 }

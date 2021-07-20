@@ -26,12 +26,12 @@ nav{
     position: fixed;
     top: 0;
     z-index: 10;
-    background-color: hsl(207, 100%, 98%);
-    transition: 1s ease-in-out;
+    background-color: white;
+    transition: 1s ease-in-out 2s;
 }
     nav:hover{
         transition: 1s ease-in-out;
-        background-color: white;
+        background-color: hsl(207, 100%, 98%);
         box-shadow: 0 0 10px hsl(192, 100%, 9%);
     }
     .logo{
@@ -58,6 +58,7 @@ nav{
                 color: hsl(321, 100%, 78%);
                 border: 1px solid hsl(321, 100%, 78%);
                 box-shadow: 0 0 10px hsl(322, 100%, 66%);
+                transition: 1s ease-in-out;
             }
 /* End of the navigation bar */
 
@@ -65,7 +66,7 @@ nav{
 .container{
     display: flex;
     flex-direction: column;
-    background-color: hsl(207, 100%, 98%);
+    background-color: white;
     width: 100%;
     height: 100%;
     position: relative;
@@ -102,6 +103,7 @@ nav{
             transition: 1s ease-in-out;
         }
             .started-btn:hover{
+                transition: 1s ease-in-out;
                 cursor: pointer;
                 background-color: hsl(321, 100%, 78%);
                 box-shadow: 0 0 10px hsl(322, 100%, 66%);
@@ -131,6 +133,11 @@ nav{
         align-items: center;
         width: 100%;
         padding: 3em;
+        padding-bottom: 13em;
+        background-image: url("images/bg-section-top-desktop-1.svg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }   
         .stats div{
             display: flex;
@@ -160,17 +167,25 @@ nav{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 5em;
     }
+        .box{
+            display: flex;
+            padding: 5em 5em;
+            gap: 2em;
+        }
+        .grow, .users{
+            width: 100%;
+            background-color: hsl(207, 100%, 98%);
+        }
         .conversation{
             display:flex;
             flex-direction: row-reverse;
-        }
-        .box{
-            display: flex;
-            padding: 3em;
-            gap: 2em;
-            width: 80%;
+            background-image: url("images/bg-section-bottom-desktop-1.svg"), url("images/bg-section-top-desktop-2.svg");
+            background-repeat: no-repeat;
+            background-position: top, bottom;
+            background-size: 100%;
+            padding-top: 15em;
+            padding-bottom: 15em;
         }
         
             .box div{
@@ -193,14 +208,24 @@ nav{
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 600px;
         justify-content: center;
         align-items: center;
         margin: auto;
         color: hsl(192, 100%, 9%);
-        padding: 5em;
+        padding: 10em;
         gap: 2em;
+        background-image: url("images/bg-section-bottom-desktop-2.svg"), url("images/bg-footer-top-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: top, bottom;
+        background-size: 100%;
     }
+        .community div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5em 0;
+        }
     /* End of the Communnity Section */
 
     /* Ending Section */
